@@ -66,7 +66,7 @@ def headers(resp):
         "frame-ancestors 'none'; form-action 'self'; base-uri 'self'")
     resp.headers["X-Content-Type-Options"] = "nosniff"
     resp.headers["X-Frame-Options"] = "DENY"
-    resp.headers["Referrer-Policy"] = "no-referrer"
+    resp.headers["Referrer-Policy"] = "same-origin"
     resp.headers["Strict-Transport-Security"] = "max-age=31536000"
     resp.headers["Cache-Control"] = "no-store"
     resp.headers.pop("Server", None)
