@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body><main><h1>Welcome, {{ user }}</h1>
+<form method="post" action="{{ url_for('logout') }}">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+<button>Log out</button></form></main></body></html>
