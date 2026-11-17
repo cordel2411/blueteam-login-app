@@ -2,4 +2,4 @@ Flask==3.0.3
 Flask-WTF==1.2.1
 Flask-Limiter==3.8.0
 argon2-cffi==23.1.0
-gunicorn==22.0.0
+gunicorn==27.0.1
